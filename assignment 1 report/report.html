@@ -1,0 +1,109 @@
+<html>  <!-- html tag marking the start of the HTML document -->
+<body>
+    <!-- body tag marking the start of the body of the document -->
+
+
+    <h1>Assignment 1 report</h1>
+
+    <!-- say something smaller as paragraph text -->
+    Path Planning project completed by Yide Gu on Sep. 20.
+
+    <!-- start a new paragraph -->
+    <p>
+        This is the report for my assignment 1.I have implemented four kinds of ways to realize the automatic path searching for potential robots use.
+        The methods includes Depth-first search, Breadth-first, A-star and Greedy Best first algorithm.
+    </p>
+
+    <p>
+        For the following section, I will campare the four methods by setting start point and end point fixed in the same map.
+
+        <h2>The following is a graph for Depth first algorithm: </h2>
+
+    <p>
+        <img src="Depth first.png"
+             alt="Breadth first algorithm" />
+    </p><p>
+        This algorithm used the stack concept, which means "last in first out" to determine the priority.
+    </p>
+
+
+    <h2>The following is a graph for Breadth first algorithm: </h2>
+
+    <p>
+        <img src="Breadth first.png"
+             alt="Breadth first algorithm" />
+    </p><p>
+        This algorithm used the queue concept, which means "first in first out" to determine the priority.
+    </p>
+
+    <h2>The following is a graph for A-star algorithm: </h2>
+
+    <p>
+        <img src="A-star.png"
+             alt="Breadth first algorithm" />
+    </p><p>
+        This algorithm combined the first in first out concept with the direct distance to the targer to determine the priority.
+    </p>
+
+    <h2>The following is a graph for Greedt Best first algorithm: </h2>
+
+    <p>
+        <img src="Greed Best first.png"
+             alt="Breadth first algorithm" />
+    </p><p>
+        This algorithm only used the direct distance to the targer to determine the priority.
+    </p>
+
+    <p>
+        The above graphs show that all the four algorithm are successfully implemented.
+        Where we can see that Depth first algorithm is relatively fast if compared with Breadth first algorithm.
+        However, it gives out a long final path, which is far from expectation. A-star has a better speed than Breadth first search,
+        and gives out the shortest path, which is acceptable and should be widely used. The A-star algorithm balanced between the Depth first search and
+        the Breadth first search.
+        The Greedy best path seems to be quick and short for this case, while by setting another configuration for the map, it could be awful. This will be showed
+        in the following section.
+    </p>
+
+    <h2>Setting another map configuration to study the behavior of greedy best algorithm: </h2>
+
+    <p>
+        <img src="A-star misc.png"
+             alt="Breadth first algorithm" />
+        <img src="Greedy Best misc.png"
+             alt="Breadth first algorithm" />
+    </p>
+    <p>
+        In this case, Greedy Best first algorithm still gives out a faster response. However, it gives out a non-ideal path, which is longer than the shortest path obviously.
+        The following section will continue to study the performance of the greedy best algorithm by inverting the start and end point.
+    </p>
+
+    <p>
+        <img src="A-star misc inverse.png"
+             alt="Breadth first algorithm" />
+        <img src="Greedy Best misc inverse.png"
+             alt="Breadth first algorithm" />
+    </p>
+    <p>
+        We can see that the postion of the start and end points also have a great influence on the performance. This time greedy best first algorithm
+        still have a better behavior over the speed.
+    </p>
+
+    <h2>Sum up of the iteration times and path length for all the four methods:</h2>
+    <p>
+        <img src="sum.PNG"
+             alt="Breadth first algorithm" />
+    </p>
+    <p>
+        This sum up table data are collected when the start point is at [0,0] and end point is set at [4,4]. The following one will contain data when the
+        start and end points are inverted.
+    </p>
+    <p>
+        <img src="sum inverse.PNG"
+             alt="Breadth first algorithm" />
+    </p>
+    <p>
+        We can see that, besides the above conclusion. The performance of Depth first algorithm is also heavily dependent on the start and end points.
+    </p>
+</body>
+</html>
+
